@@ -40,6 +40,20 @@ const handleUserInput = function(data) {
     return;
   }
 
+  if (data === 'z') {
+    connection.write("Say: imma snek ssssss");
+    return;
+  }
+
+  if (data === 'x') {
+    connection.write("Say: sneks go ssssss");
+    return;
+  }
+
+  if (data === 'c') {
+    connection.write("Say: sneks on a plen");
+    return;
+  }
 }
 
 module.exports = {
