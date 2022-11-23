@@ -15,11 +15,14 @@ const connect = function () {
 
   conn.on("connect", () => {
     console.log("Successfully connected to game server!");
-  });
-
-  conn.on("connect", () => {
     conn.write("Name: SCW");
   });
+
+  // conn.on("connect", () => {
+  //   setTimeout(() => {
+  //     conn.write("Move: up");
+  //   }, 50);
+  // });
 
   return conn;
 };
